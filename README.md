@@ -65,8 +65,8 @@ flowchart LR
 
 ```bash
 # Clonar
-git clone https://github.com/KryptAle/miplay-launcher-invisible.git
-cd miplay-launcher-invisible
+git clone https://github.com/KryptAle/MiPlay-Output-Control.git
+cd MiPlay-Output-Control
 
 # Compilar el APK de debug
 ./gradlew assembleDebug
