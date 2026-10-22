@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Tema del sistema (Material.NoActionBar) en lugar de Theme.AppCompat:
+      así no necesitamos la dependencia appcompat ni su ThemeDelegate.
+      windowDisablePreview evita el "splash" con el icono de la app.
+    -->
+    <style name="Theme.Transparent" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+</resources>

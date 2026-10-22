@@ -1,0 +1,6 @@
+{
+  "name": "MiPlay Output Control",
+  "description": "Un launcher invisible para Android (HyperOS) que ejecuta MiPlayDetailActivity inmediatamente al abrirse.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

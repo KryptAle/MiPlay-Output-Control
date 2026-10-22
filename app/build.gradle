@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+    // Sin plugin de Kotlin: lo aporta AGP 9 con android.builtInKotlin=true.
+}
+
+android {
+    namespace = 'com.personal.miplayoutputcontrol'
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.personal.miplayoutputcontrol"
+        minSdk = 26
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled = false
+        }
+        release {
+            // R8 completo: ofusca, elimina código muerto y reduce recursos.
+            minifyEnabled = true
+            shrinkResources = true
+            proguardFiles(getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro')
+            // Firma de debug para poder instalar el release localmente en pruebas.
+            signingConfig = signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    kotlin {
+        jvmToolchain(17)
+    }
+    buildFeatures {
+        // Nada de Compose: esta app no tiene UI.
+        compose = false
+        buildConfig = true
+    }
+}
+
+dependencies {
+    // AppCompat NO es necesario: usamos android.app.Activity y un tema del sistema.
+    implementation 'androidx.core:core-ktx:1.13.1'
+
+    // DataStore Preferences: solo para cachear el ComponentName que funcionó.
+    implementation 'androidx.datastore:datastore-preferences:1.1.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+}

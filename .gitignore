@@ -1,0 +1,32 @@
+# --- Node / Vite ---
+node_modules/
+dist/
+coverage/
+*.log
+
+# --- Android / Gradle ---
+.gradle/
+build/
+app/build/
+local.properties
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+*.iml
+*.apk
+*.aab
+*.ap_
+*.dex
+*.keystore
+*.jks
+
+# --- IDE ---
+.idea/*
+!.idea/.gitignore
+.DS_Store
+
+# --- Entorno ---
+.env
+.env.*
+!.env.example
