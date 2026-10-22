@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Foreground del icono adaptativo: Círculo exterior, símbolo Bluetooth,
+  ondas y auriculares perfectamente separados y limpios.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.75"
+        android:scaleY="0.75">
+
+        <!-- 1. Círculo exterior -->
+        <path
+            android:pathData="M 96,54 A 42,42 0 1,1 12,54 A 42,42 0 1,1 96,54 Z"
+            android:strokeColor="#1B2B4B"
+            android:strokeWidth="5"
+            android:fillColor="@android:color/transparent"
+            android:strokeLineCap="round"/>
+
+        <!-- 2. Símbolo Bluetooth (izquierda) -->
+        <path
+            android:pathData="M 38,32 L 50,42 L 38,52 L 50,62 L 38,72"
+            android:strokeColor="#1B2B4B"
+            android:strokeWidth="4.5"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:fillColor="@android:color/transparent"/>
+        <path
+            android:pathData="M 26,42 L 46,62"
+            android:strokeColor="#1B2B4B"
+            android:strokeWidth="4.5"
+            android:strokeLineCap="round"
+            android:fillColor="@android:color/transparent"/>
+        <path
+            android:pathData="M 26,62 L 46,42"
+            android:strokeColor="#1B2B4B"
+            android:strokeWidth="4.5"
+            android:strokeLineCap="round"
+            android:fillColor="@android:color/transparent"/>
+
+        <!-- 3. Ondas de sonido (centro-derecha) -->
+        <path
+            android:pathData="M 58,44 A 12,12 0 0,1 58,64"
+            android:strokeColor="#1B2B4B"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:fillColor="@android:color/transparent"/>
+        <path
+            android:pathData="M 64,38 A 20,20 0 0,1 64,70"
+            android:strokeColor="#1B2B4B"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:fillColor="@android:color/transparent"/>
+
+        <!-- 4. Auriculares (esquina inferior derecha) -->
+
+
+    </group>
+</vector>
